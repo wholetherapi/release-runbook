@@ -1,9 +1,11 @@
 pipeline: orbit-release
 candidate_build: stable
-retention_days: 14
+retention_days: 30
 canary_percent: 5
 gates:
   - security-scan
   - smoke-suite
+  - release-audit
 notifications:
   channel: "#release-war-room"
+# ci-bot: artifact retention extended for the Q4 release audit
