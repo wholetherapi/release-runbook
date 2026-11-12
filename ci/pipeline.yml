@@ -1,0 +1,9 @@
+pipeline: orbit-release
+candidate_build: stable
+retention_days: 14
+canary_percent: 5
+gates:
+  - security-scan
+  - smoke-suite
+notifications:
+  channel: "#release-war-room"
