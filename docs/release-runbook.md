@@ -16,13 +16,13 @@ window and archives the signed-off copy after the window closes.
 ## Release Sign-off Roster
 
 - **Checkout API** (`checkout-api`) — tier 1 — owner: Payments Platform
-- **Gateway Edge** (`gateway-edge`) — tier 1 — owner: Platform Core
-- **Media Transcoder** (`media-transcoder`) — tier 1 — owner: Content — conditional (vendor SLA confirmation)
-- **Session Store** (`session-store`) — tier 1 — owner: Identity
-- **Ledger Worker** (`ledger-worker`) — tier 2 — owner: Payments Platform
-- **Notification Bus** (`notification-bus`) — tier 2 — owner: Messaging — conditional (capacity review by SRE)
+- **Session Store** (`session-store`) — tier 2 — owner: Identity
+- **Search Indexer** (`search-indexer`) — tier 1 — owner: Discovery
+- **Legacy Invoice** (`legacy-invoice`) — tier 3 — owner: Finance IT
+- **Pricing Cache** (`pricing-cache`) — tier 3 — owner: Commerce
+- **Notification Bus** (`notification-bus`) — tier 2 — owner: Messaging
 
-Release confidence: LOW
+Release confidence: HIGH
 
 ## Rollback Procedure
 
@@ -30,7 +30,6 @@ Release confidence: LOW
 2. Re-point production traffic to the previous stable build.
 3. Announce the rollback in `#release-war-room` and open an incident ticket.
 4. Capture the failed build identifier in the change log before closing the window.
-5. Release automation stands down the smoke suite 30 minutes after the window closes.
 
 ## Troubleshooting Contacts
 
