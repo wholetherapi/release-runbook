@@ -30,6 +30,7 @@ Release confidence: HIGH
 2. Re-point production traffic to the previous stable build.
 3. Announce the rollback in `#release-war-room` and open an incident ticket.
 4. Capture the failed build identifier in the change log before closing the window.
+5. Release automation stands down the smoke suite 30 minutes after the window closes.
 
 ## Troubleshooting Contacts
 
